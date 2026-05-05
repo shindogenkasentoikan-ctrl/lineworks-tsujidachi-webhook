@@ -174,24 +174,6 @@ function extractLatLng(text) {
 
 function isCoordinateQuery(query) {
   if (!query) return false;
-
-  const cleaned = String(query).trim();
-
-  return /^-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?$/.test(cleaned);
-}
-
-function parseCoordinateQuery(query) {
-  const m = String(query).trim().match(/^(-?\d+(\.\d+)?)\s*,\s*(-?\d+(\.\d+)?)$/);
-  if (!m) return null;
-
-  return {
-    lat: m[1],
-    lng: m[3]
-  };
-}
-
-function isCoordinateQuery(query) {
-  if (!query) return false;
   return /^-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?$/.test(String(query).trim());
 }
 
