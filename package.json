@@ -1,5 +1,5 @@
 {
-  "name": "lineworks-tsujidachi-webhook",
+  "name": "lineworks-tsujidachi-v2",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.21.2",
-    "googleapis": "^150.0.1"
+    "express": "^4.21.2"
   }
 }
