@@ -416,7 +416,7 @@ if (query) {
 
 // ---------- Routes ----------
 app.get("/", (_req, res) => {
-  res.status(200).send("cloud run is alive v2");
+  res.status(200).send("cloud run is alive v3");
 });
 
 app.post("/", async (req, res) => {
